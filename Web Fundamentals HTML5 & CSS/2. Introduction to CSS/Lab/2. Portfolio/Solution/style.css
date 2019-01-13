@@ -1,0 +1,101 @@
+@import url("https://use.fontawesome.com/releases/v5.6.3/css/all.css");
+
+body {
+    font-family: "Helvetica", sans-serif;
+    font-size: 16px;
+    width: 1180px;
+    line-height: 24px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav {
+    background: #F0F1F5;
+    text-align: center;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    width: 180px;
+    border-right: 3px solid white;
+    padding: 15px 0px;
+    margin: 10px 0;
+}
+
+nav ul li a,
+ul li i {
+    color: #00d3d4;
+    text-decoration: none;
+    text-align: center;
+    display: block;
+}
+
+nav ul li:first-child {
+    border-left: 3px solid white;
+}
+
+nav ul li i {
+    font-size: 30px;
+    padding-bottom: 15px;
+}
+
+main section:first-child {
+    background: #555C6F;
+    color: #B2B6C0;
+    padding: 36px;
+    display: inline-block;
+    padding-bottom: 5px;
+    width: 400px;
+}
+
+main section:first-child h2 {
+    padding-bottom: 30px;
+}
+
+main section:first-child ul {
+    padding: 30px 0 102px 0;
+}
+
+main section:first-child ul li {
+    text-decoration: none;
+    display: inline-block;
+    padding-right: 10px;
+}
+
+main section:first-child ul li i {
+    color: #B2B6C0;
+}
+
+main section:nth-child(2) {
+    background: #01BDBE;
+    color: white;
+    display: inline-block;
+    float: right;
+    padding: 35px;
+    width: 638px;
+    height: 437px;
+}
+
+main section:nth-child(2) article:first-child {
+    width: 243px;
+    display: inline-block;
+    font-size: 18px;
+    padding-right: 20px;
+}
+
+main section:nth-child(2) article:last-child {
+    width: 250px;
+    float: right;
+    display: inline-block;
+}
+
+img {
+    width: 220px;
+    border: 10px solid white;
+    display: inline-block;
+}

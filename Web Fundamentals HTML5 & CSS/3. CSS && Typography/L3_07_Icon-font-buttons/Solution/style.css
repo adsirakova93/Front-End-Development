@@ -1,0 +1,24 @@
+@import url("https://use.fontawesome.com/releases/v5.8.1/css/all.css");
+
+html {
+    margin: 40px;
+}
+
+p {
+    margin-top: 40px;
+}
+
+a {
+    border-radius: 3px;
+    text-decoration: none;
+    color: white;
+    padding: 7px;
+}
+
+.click-button {
+    background: green;
+}
+
+.email-button {
+    background: orange;
+}

@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Helvetica');
+
+@import url('https://fonts.googleapis.com/css?family=Georgia');
+
+html {
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    margin: 20px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: Georgia, serif;
+}
+
+body>article:nth-child(10)>ul>li:nth-child(1) {
+    list-style-type: square;
+}
+
+body>article:nth-child(10)>ul>li:nth-child(2) {
+    list-style-type: square;
+}
+
+body>article:nth-child(10)>ul>li:nth-child(2)>ul>li:nth-child(2)>ul>li {
+    list-style-type: disc;
+}
+
+table,
+tr,
+td {
+    border: 1px solid rgb(160, 160, 160);
+    border-collapse: collapse;
+}
+
+table tr:nth-child(odd) {
+    background-color: white;
+}
+
+table tr:nth-child(even) {
+    background-color: rgb(220, 220, 220);
+}
+
+body>article:nth-child(10)>table>thead>tr {
+    font-style: bold;
+    background-color: rgb(160, 160, 160);
+}
+
+blockquote{
+    border-left: 4px solid rgb(160, 160, 160);
+    padding-left: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+blockquote p:nth-child(3){
+    text-align: right;
+}

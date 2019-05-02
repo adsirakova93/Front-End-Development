@@ -1,0 +1,30 @@
+/* Layout */
+
+body {
+    padding: 2rem;
+}
+
+.site {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.site-content {
+    /* border: 4px solid #000; */
+}
+
+.main-content,
+.main-sidebar {
+    display: inline-block;
+}
+
+.main-content {
+    width: 70%;
+    padding-right: 2rem;
+}
+
+.main-sidebar {
+    width: 26%;
+    vertical-align: top;
+    padding-left: 1rem;
+}

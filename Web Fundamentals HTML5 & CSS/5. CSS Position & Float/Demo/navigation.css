@@ -15,6 +15,7 @@
     clear: both;
 }
 
+/* за визуализация на падащото меню и махане на "точките" на li */
 .site-header nav ul li {
     display: block;
     position: relative;
@@ -36,7 +37,7 @@
     top: 0;
 }
 
-/* само първия ul */
+/* само първия ul и визуализация на следващите */
 .site-header nav li:hover > ul {
     display: block;
 }

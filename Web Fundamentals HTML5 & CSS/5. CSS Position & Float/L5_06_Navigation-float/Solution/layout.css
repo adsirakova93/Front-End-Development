@@ -1,0 +1,38 @@
+/* Layout */
+
+body {
+    padding: 2rem;
+}
+
+.page main {
+    width: 65%;
+}
+
+.page main:after {
+    /* display: block; */
+    height: 0;
+    content: '';
+    clear: both;
+}
+
+section.content,
+aside.sidebar {
+    float: left;
+}
+
+/* section.content {
+    width: 70%;
+    padding-right: 2rem;
+} */
+
+.page aside {
+    width: 35%;
+    height: auto;
+}
+
+aside.sidebar {
+    width: 26%;
+    vertical-align: top;
+    padding-left: 1rem;
+    margin-left: 4rem;
+}

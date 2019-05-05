@@ -1,0 +1,81 @@
+@import url('https://use.fontawesome.com/releases/v5.8.1/css/all.css');
+
+section.card {
+    display: block;
+    min-width: 10rem;
+    max-width: 30rem;
+    width: 30vw;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.card .image {
+    position: relative;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.card .image:after {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.card .image.portrait:after {
+    padding-top: 150%;
+}
+
+.card .image:before {
+    display: block;
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    z-index: 2000;
+}
+
+.card .image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    z-index: 1000;
+}
+
+.card .image a {
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    font-size: 1.5rem;
+    padding: 0 0.3rem 0.3rem 0;
+    position: absolute;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+/* да се покажат и двете снимки */
+.viewport {
+    height: 100vh;
+    position: relative;
+}
+
+.viewport:nth-child(1) {
+    background: linear-gradient(0.25turn,rgb(24, 91, 157), rgb(66, 205, 161));
+}
+
+.viewport:nth-child(2) {
+    background: linear-gradient(0.25turn,rgb(168, 50, 121), rgb(211, 130, 19));
+}

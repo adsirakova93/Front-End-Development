@@ -6,6 +6,10 @@
 @import url('post.css');
 @import url('sidebar.css');
 
+body {
+    background: rgb(238, 238, 238);
+}
+
 .site-header {
     border-bottom: 4px solid #000;
     padding-bottom: 1rem;

@@ -2,6 +2,7 @@
 
 body {
     padding: 2rem;
+    padding-top: 15rem;
 }
 
 .site {
@@ -9,8 +10,29 @@ body {
     margin: 0 auto;
 }
 
-.site-content {
-    /* border: 4px solid #000; */
+/* .site-header h1 {
+    float: left;
+    margin-right: 2rem;
+} */
+
+.site-header {
+    /* position: relative; */
+    position: fixed;
+    top: 0; right: 0; left: 0;
+    width: 100%;
+    padding: 2rem;
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+
+}
+
+/* search в горния десен ъгъл */
+.site-header .search {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 2rem;
 }
 
 .site-content:after {

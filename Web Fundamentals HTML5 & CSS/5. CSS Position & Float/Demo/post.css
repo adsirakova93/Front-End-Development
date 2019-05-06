@@ -10,6 +10,14 @@ article.post img {
     margin: 1rem auto;
 }
 
+article.post section.content p:first-child::first-letter {
+    font-size: 4rem;
+    float: left;
+    margin-right: 0.1em;
+    font-weight: bold;
+    font-family: PT Serif, serif;
+}
+
 article.post section.image {
     overflow: hidden;
     border-radius: 0.5rem;
@@ -31,5 +39,7 @@ article.post section.image img {
     width: 100%;
     height: auto;
     position: absolute;
-    top: 0; left: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

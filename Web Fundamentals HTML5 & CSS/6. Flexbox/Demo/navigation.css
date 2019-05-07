@@ -1,0 +1,58 @@
+.site-header nav {
+    box-sizing: border-box;
+}
+
+.site-header nav ul {
+    background: rgba(0, 0, 0, 0.8);
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+/* за визуализация на падащото меню и махане на "точките" на li */
+.site-header nav ul li {
+    display: block;
+    position: relative;
+}
+
+/* всички ul от второ ниво и навътре */
+.site-header nav > ul ul {
+    display: none;
+    position: absolute;
+    width: 10rem;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+}
+
+/* да излиза настрани */
+.site-header nav > ul > li > ul > li ul {
+    left: 100%;
+    top: 0;
+}
+
+/* само първия ul и визуализация на следващите */
+.site-header nav li:hover > ul {
+    display: block;
+}
+
+/* вижда се само ul първо ниво */
+.site-header nav > ul {
+    display: flex;
+}
+
+.site-header nav > ul > li {
+}
+
+.site-header nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+}
+
+.site-header nav li:hover > a,
+.site-header nav ul li a:focus,
+.site-header nav ul li a:hover {
+    background: rgb(255, 0, 0);
+    color: rgb(255, 255, 255);
+    outline: none;
+}

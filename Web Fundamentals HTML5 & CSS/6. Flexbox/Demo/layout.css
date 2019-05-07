@@ -1,0 +1,46 @@
+/* Layout */
+
+body {
+    padding: 2rem;
+}
+
+.site {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.site-header {
+    padding: 1rem 0;
+}
+
+/* search в горния десен ъгъл */
+.site-header .search {
+    display: none;
+}
+
+.site-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.main-content,
+.main-sidebar {
+    padding: 4rem 1rem 1rem 1rem; 
+}
+
+.main-content {
+    flex: 1 1 54rem;
+    padding-right: 2rem;
+}
+
+.main-sidebar {
+    flex: 1 1 22rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.main-sidebar > section {
+    flex: 1 1 19rem;
+}

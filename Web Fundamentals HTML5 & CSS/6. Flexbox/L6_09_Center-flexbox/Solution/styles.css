@@ -1,0 +1,16 @@
+body {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    background: rgb(238, 238, 238);
+}
+
+div.card {
+    max-width: 25rem;
+    padding: 0 2rem;
+    background: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+}

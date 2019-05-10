@@ -8,7 +8,7 @@ body {
     flex-wrap: wrap;
 }
 
-/* ако не са винаги по един и същи брой на ред */
+/* ако не са винаги един и същи брой на ред (в случая 3)*/
 .cards-list:after {
     display: block;
     content: '';

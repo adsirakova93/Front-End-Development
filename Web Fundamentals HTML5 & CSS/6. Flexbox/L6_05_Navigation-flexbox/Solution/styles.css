@@ -1,0 +1,49 @@
+body {
+    margin: 4rem;
+}
+
+/* space-between li items on the end */
+header.site-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+header.site-header nav ul {
+    display: flex;
+    padding-top: 1rem;
+}
+
+header.site-header nav ul li {
+    display: block;
+    margin-right: 1.5rem;
+}
+
+header.site-header nav ul:first-child {
+    padding-left: 0;
+}
+
+header.site-header nav ul li:last-child {
+    margin-right: 0;
+}
+
+header.site-header nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 153, 0);
+}
+
+header nav ul li:focus,
+header nav ul li:hover {
+    padding-bottom: 0.7rem;
+	border-bottom: 2px solid rgb(0, 153, 0);
+}
+
+.site-title {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+article.post header h1 {
+    padding-top: 2rem;
+}

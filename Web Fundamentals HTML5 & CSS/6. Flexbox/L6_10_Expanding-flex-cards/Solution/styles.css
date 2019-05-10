@@ -1,0 +1,44 @@
+/* align-items + justify-content + height = в центъра */
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: rgb(238, 238, 238);
+}
+
+section.container {
+    display: flex;
+    max-width: 60rem;
+}
+
+div.card {
+    position: relative;
+    height: 40vh;
+    min-width: 6rem;
+    flex: 0 0 auto;
+    margin: 0.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+div.card.active {
+    min-width: 30vw;
+    background: rgb(0, 0, 0);
+}
+
+div.card:after {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+div.card img {
+    display: block;
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}

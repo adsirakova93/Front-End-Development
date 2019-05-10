@@ -1,0 +1,91 @@
+body {
+    background: rgb(238, 238, 238);
+    margin: 3rem;
+}
+
+.container {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.container h2:first-child {
+    margin-left: 1rem;
+}
+
+.cards-layout.masonry {
+    column-count: 3;
+    column-gap: 1rem;
+}
+
+.cards-layout.masonry .card {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.cards-layout.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* ако не са винаги един и същи брой на ред (в случая 3)*/
+.cards-layout.flex:after {
+    display: block;
+    content: '';
+    flex: 0 0 30%;
+}
+
+.cards-layout.flex .card {
+    flex: 0 1 18rem;
+    display: flex;
+    align-items: stretch;
+    width: 30%;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    border-radius: 0.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 1rem 0 rgb(0, 0, 0, 0.5);
+    background: rgb(255, 255, 255);    
+    overflow: hidden;
+}
+
+.card:after {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    box-shadow: 0 0 1rem 0 rgb(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+}
+
+.card section {
+    display: block;
+}
+
+.card-image {
+    min-height: 5rem;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.card-image img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.card-main-data {
+    padding: 1.5rem;
+}
+
+/* margin-top е заради височината снимката в Париж footer да отиде най-отдолъ */
+.card .card-footer {
+    border-top: 0.2rem solid rgb(238, 238, 238);
+    padding: 1.5rem;
+    margin-top: auto;
+}

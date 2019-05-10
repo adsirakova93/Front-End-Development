@@ -1,0 +1,38 @@
+/* flex-direction иначе header е счупен */
+body {
+    display: flex;
+    flex-direction: column;
+    background: rgb(238, 238, 238);
+    margin: 0;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* space-between li items on the end */
+header.site-header {
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.site-title {
+    padding: 1rem 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+article.post header h1 {
+    padding-top: 2rem;
+}
+
+footer:last-of-type {
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    color: rgb(255, 255, 255);
+    background: rgb(102, 102, 102);
+}
+
+footer:last-of-type > p {
+    padding: 0;
+    margin: 0;
+}

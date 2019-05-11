@@ -1,0 +1,33 @@
+.menu {
+
+}
+
+.menu {
+    padding-left: 0;
+}
+
+.menu li {
+    display: block;
+    list-style: none outside;
+}
+
+/* nowrap за да не се прехвърля на нови редове */
+/* text-overflow + overflow + width = да сложи ... при много текст */
+.menu li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 100%;
+}
+
+.menu li a.fas {
+    font-family: inherit;
+}
+
+/* иначе се чупи картинката */
+.menu li a.fas:before {
+    font-family: "Font Awesome 5 Free";
+    padding-right: 0.5rem;
+}

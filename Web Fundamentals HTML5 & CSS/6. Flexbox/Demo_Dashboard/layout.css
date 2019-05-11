@@ -1,0 +1,65 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* без Flex няма да е като sidebar, а като navigation */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* ако има място grown-и; flex за да бъде sidebar */
+.dashboard {
+    display: flex;
+    flex-grow: 1;
+}
+
+.dash-main-nav,
+.dash-header,
+.dash-footer {
+    background: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+}
+
+/* grow, защото няма width и не се вижда */
+.dash-main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    background: rgb(255, 255, 255);
+}
+
+/* размер на sidebar ако a href името е голямо отива на нов ред не разпъва sidevar той е фиксиран иначе използвай nowrap в .menu li a */
+.dash-main-nav {
+    flex: 0 0 10rem;
+    overflow: hidden;
+}
+
+.dash-header {
+    display: flex;
+    align-items: center;
+}
+
+/* flex-grow иначе не си променя цвета */
+.dash-content {
+    flex-grow: 1;
+    padding: 2rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5) inset;
+}
+
+.dash-footer {
+    display: flex;
+}
+
+.dash-footer p {
+    
+}
+
+/* Elements */
+.credit,
+.user-profile {
+    margin-left: auto
+}

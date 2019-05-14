@@ -1,0 +1,123 @@
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 3rem;
+}
+
+form {
+    max-width: 30rem;
+    margin: 0 auto;
+}
+
+p {
+    margin-bottom: 0.5rem;
+}
+
+.input-legend {
+    display: block;
+}
+
+fieldset {
+    width: 30%;
+    display: block;
+    position: relative;
+    padding: 1rem 2rem 1rem 2rem;
+    background: rgb(249, 249, 249);
+    border-radius: 0.4rem;
+    border: 2px solid rgba(204, 204, 204, 0.7);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+}
+
+.form-legend {
+    background: rgb(249, 249, 249);
+    border: 1px solid rgb(108, 108, 108);
+    border-radius: 0.3rem;
+    padding: 0.5rem 1rem;
+    position: absolute;
+    top: -1.5rem;
+    left: -0.1rem;
+}
+
+.input-container {
+	display: flex;
+	position: relative;
+	align-items: center;
+}
+
+.input-container:after {
+	display: block;
+	content: '';
+}
+
+.input-container input {
+	border: none;
+	flex: 1 1 auto;
+	padding: 0.8rem;
+    background: transparent;
+	z-index: 2;
+	order: 2;
+}
+
+.input-container .fas {
+	z-index: 2;
+	position: relative;
+	padding: 0 0 0 0.8rem;
+	font-size: 0.9em;
+	order: 1;
+}
+
+.input-container input + .actions {
+	display: block;
+	background: #FFF;
+	border: 1px solid rgb(204, 204, 204);
+	border-radius: 0.3rem;
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	z-index: 1;
+}
+
+.input-container input:focus + .actions {
+	border-color: #090;
+}
+
+.input-container input:focus + .actions + .fas {
+	color: #090;
+}
+
+.login-button {
+    display: inline-block;
+    position: relative;
+    text-align: center;
+    padding: 0.3rem 1rem 0.3rem 0.7rem;
+    margin: 0 2rem 1rem 0;
+    background: rgb(45, 45, 45);
+    border-color: rgb(45, 45, 45);
+    color: rgb(255, 255, 255);
+    border-radius: 0.3rem;
+}
+
+.login-button:hover,
+.login-button:focus {
+    background: rgb(100, 100, 100);
+    border-color: rgb(100, 100, 100);
+}
+
+@media screen and (min-width: 800px) {
+	p {
+		display: flex;
+    }
+    
+    /* .input-legend {
+        display: block;
+    } */
+
+	p .input {
+		flex: 1 0 auto;
+	}
+}

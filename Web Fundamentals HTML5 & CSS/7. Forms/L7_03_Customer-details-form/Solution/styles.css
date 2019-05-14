@@ -1,0 +1,64 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
+    background: rgb(173, 216, 230);
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+label {
+    flex: 1;
+}
+
+input, select, span, button, textarea {
+    flex: 2;
+}
+
+span {
+    display: flex;
+    justify-content: flex-start;
+}
+
+section > input,
+section span,
+section select {
+    height: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.inputs.terms-section {
+    display: block;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    margin-top: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 0.4rem;
+    background: rgb(35, 68, 101);
+    border-color: rgb(35, 68, 101);
+    color: rgb(255, 255, 255);
+}
+
+button:hover,
+button:focus {
+    opacity: 0.5;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Customer Details Form</title>
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="POST">
+        <header class="form-header">
+            <h1>Customer Details</h1>
+        </header>
+        <main>
+            <section>
+                <label>First Name</label>
+                <input type="text" placeholder="George" />
+            </section>
+            <section>
+                <label>Last Name</label>
+                <input type="text" placeholder="Devis" />
+            </section>
+            <section>
+                <label>Gender</label>
+                <span><input type="radio" value="male"/> Male <input type="radio" value="female"/> Female</br></span>
+            </section>
+            <section>
+                <label>Email</label>
+                <input type="email" placeholder="your@email.com"/>
+            </section>
+            <section>
+                <label>Phone</label>
+                <input type="text" placeholder="+359885236225"/>
+            </section>
+            <section>
+                <label>Town</label>
+                <select id="town-select">
+                    <option value="Varna" selected>Varna</option>
+                    <option value="Sofia">Sofia</option>
+                </select>
+            </section>
+            <section>
+                <label>Age</label>
+                <input type="number" />
+            </section>
+            <section>
+                <label>Language</label>
+                <input type="text" />
+            </section>
+            <section>
+                <label>Message</label>
+                <textarea id="message-textarea" cols="35" rows="5" placeholder="More information..."></textarea>
+            </section>
+            <section class="inputs terms-section">
+                <input type="checkbox" />
+                <label>I agree the Terms and Conditions</label>
+            </section>
+            <section>
+                <button>Send</button>
+            </section>
+        </main>
+    </form>
+</body>
+</html>

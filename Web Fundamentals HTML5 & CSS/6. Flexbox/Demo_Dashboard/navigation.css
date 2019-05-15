@@ -1,9 +1,8 @@
 .menu {
-
-}
-
-.menu {
+    width: 10rem;
     padding-left: 0;
+    position: fixed;
+    overflow: hidden;
 }
 
 .menu li {
@@ -14,20 +13,23 @@
 /* nowrap за да не се прехвърля на нови редове */
 /* text-overflow + overflow + width = да сложи ... при много текст */
 .menu li a {
+    width: 100%;
     color: rgb(255, 255, 255);
     text-decoration: none;
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
-    width: 100%;
+    padding: 0.5em 1em;
 }
 
 .menu li a.fas {
     font-family: inherit;
+    font-weight: 400;
 }
 
 /* иначе се чупи картинката */
 .menu li a.fas:before {
     font-family: "Font Awesome 5 Free";
     padding-right: 0.5rem;
+    font-weight: 900;
 }

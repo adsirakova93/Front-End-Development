@@ -55,11 +55,31 @@ body {
 }
 
 .dash-footer p {
-    
+    padding: 0.5em 1em;
+}
+
+.user-profile {
+    padding: 0.5em 1em;
 }
 
 /* Elements */
 .credit,
 .user-profile {
     margin-left: auto
+}
+
+.user-profile a {
+    display: flex;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+.user-profile:hover a {
+    color: rgb(144, 237, 144);
+}
+
+.avatar {
+    font-size: 1.3rem;
+    margin-right: 0.5rem;
 }

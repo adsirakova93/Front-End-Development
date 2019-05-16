@@ -1,0 +1,132 @@
+.cards-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.cards-list:after {
+    display: block;
+    content: '';
+    float: 0 0 auto;
+}
+
+.player-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 0 1 22rem;
+    border: 1px solid rgba(204, 204, 204, 0.8);
+    border-radius: 0.5rem;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    margin-bottom: 4rem;
+    overflow: hidden;
+}
+
+.card-media {
+    width: auto;
+    height: 80vh;
+    /* overflow: hidden; */
+}
+
+.image {
+    display: block;
+    width: auto;
+    height: 100%;
+    position: relative;
+    border: 1px solid rgba(204, 204, 204, 0.8);
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+
+.image:after {
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.image img {
+    display: block;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1.2rem 1rem 1.2rem;
+    border: solid rgba(204, 204, 204, 0.8);
+    border-width: 1px 0;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.control-buttons i {
+    font-size: 1.4rem;
+    padding: 0.6rem;
+}
+
+.control-buttons i:hover,
+.control-buttons i:focus {
+    background: rgb(178, 34, 34);
+    border-radius: 1.5rem;
+    color: rgb(255, 255, 255);
+}
+
+.control-buttons i:nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem;
+}
+
+.control-buttons i:nth-child(2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 1.5rem 0 0;
+}
+
+.control-buttons i:nth-child(3) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0.5rem 0 0.5rem;
+}
+
+.progress {
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 0.4rem;
+    background-color: rgb(221, 221, 221);
+    margin: 0 1rem;
+    position: relative;
+}
+
+.progress:hover,
+.progress:focus {
+    box-shadow: 0 0 0.5rem 0 rgba(0, 0, 0, 1);
+}
+
+.elapsed-progress {
+    width: 30%;
+    height: 0.4rem;
+    background: rgb(178, 34, 34);
+    border-radius: 0.5rem;
+    position: absolute;
+}

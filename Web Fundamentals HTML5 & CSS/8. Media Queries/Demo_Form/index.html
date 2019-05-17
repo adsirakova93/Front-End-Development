@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="forms.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="POST">
+        <fieldset class="single-line larger reverse">
+            <legend>Contact Information</legend>
+
+            <p class="icon">
+                <label for="field_first_name">First Name</label>
+                <span class="input-wrapper">
+                    <input type="text" name="field_first_name" id="field_first_name" placeholder="John">
+                    <i class="far fa-user"></i>
+                </span>
+            </p>
+            <p class="icon">
+                <label for="field_last_name">Last Name</label>
+                <span class="input-wrapper">
+                    <input type="text" name="field_last_name" id="field_last_name" placeholder="Johnson">
+                    <i class="far fa-user"></i>
+                </span>
+            </p>
+            <p class="icon">
+                <label for="field_email">Email</label>
+                <span class="input-wrapper">
+                    <input type="email" name="field_email" id="field_email" placeholder="Email">
+                    <i class="far fa-user"></i>
+                </span>
+            </p>
+        </fieldset>
+
+        <fieldset class="single-line">
+            <legend>Feedback</legend>
+
+            <p class="icon">
+               <label for="select_age">First Name</label>
+               
+               <span class="input-wrapper">
+                    <select name="select_age">
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                    </select>
+                    <i class="far fa-user"></i>
+                </span>
+            </p>
+            <p class="icon">
+                <label for="field_last_name">Last Name</label>
+                <span class="input-wrapper">
+                    <input type="text" name="field_last_name" id="field_last_name" placeholder="Last Name">
+                    <i class="far fa-user"></i>
+                </span>
+            </p>
+            <p class="icon">
+                <label for="field_email">Email</label>
+                <span class="input-wrapper">
+                    <input type="email" name="field_email" id="field_email" placeholder="Email">
+                    <i class="far fa-user"></i>
+                </span>
+            </p>
+        </fieldset>
+
+        <fieldset class="larger">
+            <legend>Login Information</legend>
+
+            <p class="icon">
+                <label for="field_username">Username</label>
+                <span class="input-wrapper">
+                    <input type="text" name="username" id="field_username" placeholder="john">
+                    <i class="far fa-user"></i>
+                </span>
+            </p>
+            <p class="icon">
+                <label for="field_password">Password</label>
+                <span class="input-wrapper">
+                    <input type="password" name="field_password" id="field_password">
+                    <i class="fas fa-user-secret"></i>
+                </span>
+            </p>
+        </fieldset>
+
+        <p class="submit">
+            <button>Update</button>
+        </p>
+    </form>
+</body>
+</html>

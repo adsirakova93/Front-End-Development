@@ -1,0 +1,152 @@
+fieldset {
+    border: 2px solid rgb(204, 204, 204);
+    padding: 2em;
+}
+
+fieldset,
+p.submit {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+fieldset + fieldset {
+    margin-top: 2em;
+}
+
+fieldset p {
+    padding-bottom: 1em;
+}
+
+p.submit {
+    margin-top: 2rem;
+}
+
+
+legend {
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 0 0.5em;
+}
+
+/* appearance маха се стрелката на select и browser стилизирането */
+input, button, select {
+    width: 100%;
+    outline: none;
+    appearance: none;
+    padding: 0.5em 1em;
+    border: 2px solid rgb(204, 204, 204);
+    background: rgb(255, 255, 255);
+    border-radius: 0.3em;
+    -webkit-appearance: none;
+    -moz-appearance:    none;
+}
+
+input {
+    display: block;
+    border: none;
+}
+
+input:focus,
+button:focus,
+select:focus {
+    border-color: rgb(68, 119, 170);
+}
+
+select {
+    background: url('chevron-down-solid.svg') 99% center no-repeat;
+    background-size: 0.8rem auto;
+    border: none;
+}
+
+button {
+    width: auto;
+    background: rgb(51, 102, 153);
+    color: rgb(255, 255, 255);
+    border-color: rgb(34, 85, 136);
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    button { 
+        font-size: 1.2em;
+        padding: 0.8em 1.2em;
+    }
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 0.5em 1em;
+    position: relative;
+}
+
+.input-wrapper i {
+    display: flex;
+    align-items: center;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 0.3em;
+    background: rgb(255, 255, 255);
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    z-index: -1;
+}
+
+.input-wrapper i:before {
+    padding: 0 0.4em;
+}
+
+.input-wrapper input {
+    order: 2;
+}
+
+/* при фокусиран елемент да се смени цвета на иконката */
+input:focus + i {
+    color: rgb(68, 119, 170);
+    border-color: rgb(68, 119, 170);
+}
+
+input:hover + i {
+    color: rgb(68, 119, 0);
+    border-color: rgb(68, 119, 0);
+}
+
+.icon input {
+    margin-left: 0.5rem;
+}
+
+@media (min-width: 600px) {
+
+    /* single-line */
+    fieldset.single-line p {
+        display: flex;
+        align-items: center;
+    }
+    
+    fieldset.single-line .input-wrapper {
+        flex: 1 0 auto;
+    }
+    
+    fieldset.single-line p > label[for] {
+        display: block;
+        flex: 0 0 30%;
+        text-align: right;
+        padding-right: 0.5em;
+    }
+    
+    /* larger */
+    fieldset.larger {
+        font-size: 1.2em;
+    }
+}
+
+/* reverse */
+fieldset.reverse p > label[for] {
+    order: 2;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 0.5em;
+}
+
+fieldset.reverse p label .input-wrapper {
+    order: 1;
+}

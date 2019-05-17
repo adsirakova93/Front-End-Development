@@ -1,0 +1,17 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font: 16px/1.5 Georgia, serif;
+}
+
+body, input, button, select, legend {
+    font: inherit;
+}
+
+body {
+    padding: 2rem;
+}

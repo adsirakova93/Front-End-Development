@@ -1,0 +1,133 @@
+.site-header nav {
+    box-sizing: border-box;
+    background: rgba(0, 0, 0, 0.8);
+    color: rgb(255, 255, 255);
+}
+
+.site-header nav ul {
+    padding-bottom: 0;
+    padding-left: 0;
+}
+
+/* за визуализация на падащото меню и махане на "точките" на li */
+.site-header nav ul li {
+    display: block;
+    position: relative;
+}
+
+.site-header nav ul li a {
+    display: block;
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 1rem;
+}
+
+.site-header nav li:hover > a,
+.site-header nav ul li a:focus,
+.site-header nav ul li a:hover {
+    outline: none;
+}
+
+.site-header nav a:focus:active,
+.site-header nav a:hover:active {
+    background: rgb(255, 255, 0);
+    color: rgb(0, 0, 0);
+}
+
+/* ако устр. поддържа hover */
+@media (hover:hover) {
+
+    /* всички ul от второ ниво и навътре */
+    .site-header nav > ul ul {
+        display: none;
+        position: absolute;
+        background: rgba(0, 0, 0, 0.8);
+        width: 10rem;
+        top: 100%;
+        left: 0;
+        z-index: 1000;
+    }
+    
+    /* да излиза настрани */
+    .site-header nav > ul > li > ul > li ul {
+        left: 100%;
+        top: 0;
+    }
+    
+    /* само първия ul и визуализация на следващите */
+    .site-header nav li:hover > ul {
+        display: block;
+    }
+    
+    /* вижда се само ul първо ниво */
+    .site-header nav > ul {
+        display: flex;
+    }
+    
+    .site-header nav > ul > li {
+    }
+}
+
+/* след първия ul */
+@media not (hover:hover) {
+    .site-header nav ul ul {
+        padding: 0 0 1rem 1rem;
+    }
+}
+
+#toggle-nav {
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+}
+
+/* mobile menu */
+
+@media (min-width: 1024px) {
+    .nav-toggle {
+        display: none;
+    }
+}
+
+@media (max-width: 1024px) {
+    
+    .site-header nav > ul {
+        display: none;
+    }
+
+    /* /може би излишно */
+    /* .site-header nav > ul ul li {
+        display: none;
+    } */
+    
+    .nav-toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 2rem;
+        padding: 0;
+    }
+
+    .nav-toggle i.nav-open {
+        display: block;
+    }
+
+    .nav-toggle i.nav-close {
+        display: none;
+    }
+
+    .nav-toggle i.nav-close {
+        display: none;
+    }
+
+    #toggle-nav:checked + .site-header nav ul {
+        display: block;
+    }
+
+    #toggle-nav:checked + .site-header .nav-toggle i.nav-close {
+        display: block;
+    }
+
+    #toggle-nav:checked + .site-header .nav-toggle i.nav-open {
+        display: none;
+    }
+}

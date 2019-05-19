@@ -1,0 +1,96 @@
+/* Layout */
+
+@media (min-width: 1024px) {
+    body {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    body {
+        padding: 1rem;
+    }
+}
+
+
+.site {
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+.site-header {
+    padding: 1rem 0;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* search в горния десен ъгъл */
+.site-header .search {
+    margin-left: auto;
+}
+
+.site-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+@media (min-width: 1024px) {
+
+    .main-content,
+    .main-sidebar {
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .main-content,
+    .main-sidebar {
+        padding: 4rem 1rem 1rem 1rem; 
+    }
+}
+
+.main-content {
+    flex: 1 1 54rem;
+    padding-right: 2rem;
+}
+
+.main-sidebar {
+    flex: 1 1 22rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.main-sidebar > section {
+    flex: 1 1 19rem;
+}
+
+@media (max-width: 600px) {
+    .site-header h1 {
+        text-align: center;
+        flex-grow: 1;
+        order: 1;
+    }
+
+    .site-header nav {
+        /* display: block; */
+        flex-grow: 1;
+        order: 2;
+    }
+    
+    .site-header .search {
+        flex-grow: 1;
+        order: 3;
+        padding-top: 1em;
+    }
+
+    .site-header .search input {
+        width: 100%;
+    }
+
+    .site-header .search header {
+        display: none;
+    }
+}

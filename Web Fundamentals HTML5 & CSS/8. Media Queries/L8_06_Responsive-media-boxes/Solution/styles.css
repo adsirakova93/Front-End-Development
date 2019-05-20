@@ -1,0 +1,42 @@
+html {
+    background: rgb(238, 238, 238);
+}
+
+.card {
+    background: rgb(255, 255, 255);
+    max-width: 25rem;
+    margin: 0 auto;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+}
+
+.card-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-image img:before {
+    display: block;
+    content: '';
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.card-header h4 {
+    font-family: Georgia, serif;
+}
+
+.card-content {
+    padding: 1rem 1.5rem;
+}
+
+.card button {
+    background:rgb(0, 153, 0);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 0.4rem;
+    padding: 0.5rem 1rem;
+    display: flex;
+    margin-left: auto;
+}

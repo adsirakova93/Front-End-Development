@@ -1,0 +1,113 @@
+@import url('typography.css');
+@import url('layout.css');
+
+html {
+    font-family: Helvetica, sans-serif;
+}
+
+body {
+    margin: 4rem;
+    background: rgb(238, 238, 238);
+}
+
+.page {
+    max-width: 75rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: Georgia, serif;
+    margin-top: 1.5rem;
+}
+
+.page header:first-of-type p {
+    margin: 0;
+}
+
+.page > header {
+    display: block;
+    width: 100%;
+}
+
+header .site-title {
+    display: flex;
+    min-width: 20vw;
+    font-weight: bold;
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.site-header {
+    padding-bottom: 1.5rem;
+    border-bottom: 0.1rem solid #000;
+}
+
+article.post header h2 {
+    margin: 2.5rem 0 1.5rem 0;
+}
+
+article.post section.content p {
+    text-align: justify;
+}
+
+img {
+    background: rgb(255, 255, 255);
+}
+
+img.picture1 {
+    display: block;
+    /* width: 18%;
+    height: auto; */
+    float: right;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0.4rem;
+    margin: 1rem 0 1rem 1.5rem;
+    position: relative;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+}
+
+img.picture2 {
+    display: block;
+    float: left;
+    border: 2px solid rgb(0, 0, 0);
+    padding: 0.4rem;
+    margin: 0 1.5rem 0.5rem 0;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+}
+
+blockquote {
+    font-family: Georgia, serif;
+    width: 40%;
+    min-width: 15rem;
+    color: rgb(81, 79, 94);
+    float: right;
+    border-left: 0.3rem solid rgb(221, 221, 221);
+    margin-top: 0;
+}
+
+blockquote p:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+blockquote p.author {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
+aside.sidebar nav ul li a {
+    color: rgb(0, 153, 0);
+    text-decoration: none;
+}
+
+aside.sidebar:after {
+    display: block;
+    height: 0;
+    content: '';
+    clear: both;
+}

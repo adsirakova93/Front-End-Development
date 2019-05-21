@@ -1,0 +1,55 @@
+table {
+    width: 90vw;
+    margin: 1.5rem 1rem;
+}
+
+table thead th {
+    flex: 0 0 30%;
+    text-align: left;
+    padding-left: 0.5rem;
+    background: rgb(51, 51, 51);
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(192, 192, 192, 0.5);
+}
+
+table tbody td {
+    padding-left: 0.5rem;
+    border: 1px solid rgba(192, 192, 192, 0.5);
+}
+
+@media screen and (max-width: 799px) {
+
+    table thead th,
+    table tbody tr {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background: rgb(241, 241, 241);
+        color: rgb(0, 0, 0);
+    }
+
+    td,
+    tr,
+    th {
+        border: 1px solid rgba(192, 192, 192, 0.5);
+    }
+
+    table thead tr {
+        display: none;
+    }
+
+    td:nth-of-type(1):before {
+        content: attr(data-firstname);
+        padding-right: 1rem;
+    }
+
+    td:nth-of-type(2):before {
+        content: attr(data-lastname);
+        padding-right: 1rem;
+    }
+
+    td:nth-of-type(3):before {
+        content: attr(data-jobtitle);
+        padding-right: 1rem;
+    }
+}

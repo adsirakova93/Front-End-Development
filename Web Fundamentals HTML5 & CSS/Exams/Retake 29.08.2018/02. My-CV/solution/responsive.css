@@ -1,0 +1,67 @@
+@media screen and (max-width: 1028px) {
+    #main {
+        flex-direction: column;
+        width: 90%;
+        margin: 1.5rem auto;
+    }
+
+    #main aside {
+        width: 94.5%;
+    }
+
+    #main > aside > img {
+        float: left;
+        width: 16em;
+        height: 15em;
+        border-radius: 50%;
+        margin: 3rem;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    }
+
+    #personal-info {
+        padding: 3rem 0 0 3rem;
+    }
+
+    .progress-bar {
+        margin: 0 2rem;
+    }
+
+    #main main {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #main > aside {
+        width: 90%;
+    } 
+
+    #main > aside > img {
+        float: none;
+        width: 90%;
+        height: auto;
+        border-radius: unset;
+        margin: 1rem;
+    }
+
+    #personal-info {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem 0 0 1rem;
+    }
+
+    .uni-img-container {
+        margin-bottom: 5rem;
+    }
+
+    .education > article > div > div {
+        display: block;
+        float: none;
+        width: 12em;
+        margin: 0 auto;
+    }
+
+    .progress-bar {
+        margin: 0 1rem;
+    }
+}

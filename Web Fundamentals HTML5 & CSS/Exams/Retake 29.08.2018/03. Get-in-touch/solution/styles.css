@@ -1,0 +1,143 @@
+body {
+    background: linear-gradient(rgba(132, 105, 221, 0.8), rgba(132, 105, 221, 0.8)), url('../images/bg-01.jpg') no-repeat center;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    max-width: 70%;
+    height: auto;
+    background: rgb(255, 255, 255);
+    border-radius: 0.5rem;
+    margin: 2rem auto;
+    padding: 2rem 3rem;
+}
+
+.image-container {
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+}
+
+form {
+    width: 45%;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.form-header {
+    margin: 0 0 0 2rem;
+}
+
+form label {
+    width: 95%;
+    display: block;
+    /* margin: 2rem; */
+}
+
+label:focus-within img {
+    left: 2rem;
+    color: rgb(132, 106, 221);
+}
+
+label:focus-within input::placeholder,
+label:focus-within textarea::placeholder {
+    opacity: 0;
+}
+
+form label img {
+    width: 0.9rem;
+    height: 0.9rem;
+    padding: 0 0 0 0.8rem;
+    position: relative;
+    color: rgb(164, 164, 164);
+    left: 2rem;
+}
+
+form label input {
+    width: 20rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    background: rgb(230, 230, 230);
+    padding: 0.5rem 0.4rem 0.5rem 2rem;
+    margin: 0.6rem 0;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-weight: 600;
+}
+
+form label textarea {
+    width: 80%;
+    background: rgb(230, 230, 230);
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    margin: 0.5rem 0 0 2rem;
+    padding: 1rem;
+}
+
+button {
+    width: 82%;
+    text-align: center;
+    margin: 1rem 0 0 1.7rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+    background: rgb(132, 106, 221);
+    color: rgb(255, 255, 255);
+    padding: 0.4rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: rgb(51, 51, 51);
+}
+
+@media screen and (max-width: 1000px) {
+    main {
+        max-width: 45rem;
+    }
+
+    .image-container img {
+        width: 20rem;
+    }
+
+    form label img {
+        width: 0.9rem;
+        height: 0.9rem;
+        padding: 0 0 0 0.8rem;
+        position: relative;
+        color: rgb(164, 164, 164);
+        left: 2rem;
+    }
+
+    form label input {
+        width: 10rem;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    main {
+        max-width: 23rem;
+    }
+
+    .image-container img {
+        width: 12rem;
+    }
+
+    form {
+        margin-left: 3rem;
+        max-width: 25rem;
+    }
+
+    form label input {
+        width: 5rem;
+    }
+}

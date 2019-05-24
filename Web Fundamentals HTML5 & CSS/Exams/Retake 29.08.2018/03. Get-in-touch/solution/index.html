@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form</title>
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <section class="image-container">
+            <img src="../images/img-01.png" alt="envelope_img">
+        </section>
+        <form action="POST">
+            <header class="form-header">
+                <h4>Get in touch</h4>
+            </header>
+            <label for="first-name">
+                <img src="./user-solid.svg" alt="user-img">
+                <input type="text" id="first-name" placeholder="First name">
+            </label>
+            <label for="last-name">
+                <img src="./user-solid.svg" alt="user-img">
+                <input type="text" id="last-name" placeholder="Last name">
+            </label>
+            <label for="ucl">
+                <img src="./address-book-solid.svg" alt="user-img">
+                <input type="number" id="ucl" placeholder="UCL">
+            </label>
+            <label for="email">
+                <img src="./envelope-solid.svg" alt="user-img">
+                <input type="email" id="email" placeholder="Email">
+            </label>
+            <label for="message">
+                <textarea id="message" cols="30" rows="5" placeholder="Message"></textarea>
+            </label>
+            <button class="submit-button">Sent</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,187 @@
+.site-header nav { 
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem 7rem 0 7rem;
+}
+
+.site-header li {
+    display: inline-block;
+}
+
+.site-header a {
+    text-decoration: none;
+    color: rgb(127, 127, 129);
+}
+
+.site-header > nav > ul:nth-child(1) > li:nth-child(1) a {
+    color: rgb(250, 91, 62);
+}
+
+.site-header > nav > ul:nth-child(2) > li {
+    padding-right: 0.5rem;
+    border-right: 1px solid rgb(230, 230, 230);
+}
+
+.site-header li {
+    margin: 0 1rem;
+}
+
+.landing-page {
+    background: url('../img/residential-banner-2.jpg') no-repeat center;
+    background-size: cover;
+    height: 25em;
+}
+
+.landing-page header h1 {
+    width: 35rem;
+    padding: 2rem 0 1.5rem 0;
+    margin: 0 auto;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.landing-page-title {
+    white-space: nowrap;
+}
+
+.landing-page p {
+    margin: 0 auto;
+    color: rgb(255, 255, 255);
+}
+
+.landing-page main p:nth-child(1) {
+    width: 20rem;
+}
+
+.landing-page main p:nth-child(2) {
+    width: 24rem;
+}
+
+.how-to header {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.article-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(81, 81, 81);
+    margin: 0 auto 2rem 0;
+}
+
+.article-container header h2 {
+    border-bottom: 1px solid rgb(81, 81, 81);
+    line-height: 0.1em;
+    width: 5rem;
+    margin: 0.6rem auto 1.2rem;
+}
+
+.article-container header h2 span {
+    padding: 0 0.5rem;
+    background: rgb(255, 255, 255);
+}
+
+.article-container p {
+    width: 15rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.views {
+    background: rgb(237, 237, 237);
+}
+
+.views .article-container {
+    justify-content: center;
+    padding: 5rem 0;
+}
+
+.views .article-container article {
+    margin: 0 0.5rem;
+}
+
+.site-footer {
+    background: rgb(0, 0, 0);
+    color: rgb(127, 127, 129);
+    text-align: center;
+}
+
+.site-footer section {
+    display: flex;
+    justify-content: center;
+    padding: 2.4rem 0;
+    margin: 0 auto;
+    width: 79rem;
+}
+
+.site-footer article {
+    margin: 0 0.7rem;
+}
+
+.site-footer article img {
+    padding-bottom: 1.5rem;
+}
+
+.site-footer .all-options {
+    display: flex;
+    width: 25rem;
+    border-bottom: 1px solid rgb(127, 127, 129);
+    padding-bottom: 2rem;
+    /* margin: 0 auto; */
+}
+
+.site-footer .all-options ul {
+    width: 10rem;
+    list-style: none;
+}
+
+.site-footer .all-options li {
+    padding: 0.3rem 0;
+    line-height: 1.1rem;
+    list-style: none;
+}
+
+.site-footer .abc-container p {
+    padding-bottom: 0.2rem;
+}
+
+.site-footer .sign-up {
+    width: 24rem;
+}
+
+.site-footer .sign-up p {
+    width: 24rem;
+    padding-bottom: 1rem;
+}
+
+.site-footer input {
+    display: block;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    width: 15rem;
+    outline: none;
+    border: none;
+}
+
+.site-footer button {
+    float: left;
+    background: rgb(250, 91, 62);
+    outline: none;
+    border: none;
+    padding: 0.5rem 0.2rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.site-footer button:hover,
+.site-footer button:focus {
+    background: rgb(51, 51, 51);
+}
+
+.footer-policy {
+    padding: 2.5rem 0 1rem 0;
+    margin-left: 10rem;
+}

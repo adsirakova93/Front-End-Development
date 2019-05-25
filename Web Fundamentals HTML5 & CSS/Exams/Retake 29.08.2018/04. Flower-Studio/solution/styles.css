@@ -1,3 +1,8 @@
+#toggle-nav,
+#toggle-button  {
+    display: none;
+}
+
 .site-header nav { 
     display: flex;
     justify-content: space-between;
@@ -184,4 +189,201 @@
 .footer-policy {
     padding: 2.5rem 0 1rem 0;
     margin-left: 10rem;
+}
+
+@media screen and (max-width: 749px) {
+    #toggle-button {
+        display: flex;
+        flex: 0 0 auto;
+        font-size: 1.7em;
+        float: right;
+        padding: 2rem;
+    }
+
+    .site-header {
+        background: rgb(70, 65, 62);
+    }
+
+    .site-header nav {
+        display: none;
+        border-top: 2px solid rgb(0, 0, 0);
+    }
+
+    .site-header nav:not(:first-child) {
+        padding-top: 0.5rem;
+    }
+
+    .site-header nav a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    .site-header > nav > ul:nth-child(2) > li {
+        border: none;
+    }
+
+    #toggle-nav:checked + .site-header nav {
+        display: block;
+        flex: 1 0 100%;
+        text-align: center;
+    }
+
+    #toggle-nav:checked + .site-header #toggle-button i.fa-bars {
+        display: none;
+    }
+
+    #toggle-nav:not(:checked) + .site-header #toggle-button i.fa-times {
+        display: none;
+    }
+
+    .article-container {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .site-footer li {
+        display: block;
+    }
+
+    .all-options,
+    .abc-container,
+    .sign-up {
+        flex: 0 0 30%;
+    }
+
+    .site-footer .abc-container ul {
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 0;
+    }
+
+    .site-footer .sign-up li {
+        display: block;
+        flex: 0 0 50%;
+        font-size: 1.1em;
+        line-height: 1.2;
+        position: relative;
+        padding-left: 2rem;
+        padding-bottom: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #toggle-button {
+        display: flex;
+        flex: 0 0 auto;
+        font-size: 1.7em;
+        float: right;
+        padding: 2rem;
+    }
+
+    .site-header {
+        background: rgb(70, 65, 62);
+    }
+
+    .site-header nav {
+        display: none;
+        border-top: 2px solid rgb(0, 0, 0);
+    }
+
+    .site-header nav li {
+        display: block;
+    }
+
+    .site-header nav:not(:first-child) {
+        padding-top: 0.5rem;
+    }
+
+    .site-header nav a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    .site-header > nav > ul:nth-child(2) > li {
+        border: none;
+    }
+
+    #toggle-nav:checked + .site-header nav {
+        display: block;
+        flex: 1 0 100%;
+        text-align: center;
+    }
+
+    #toggle-nav:checked + .site-header #toggle-button i.fa-bars {
+        display: none;
+    }
+
+    #toggle-nav:not(:checked) + .site-header #toggle-button i.fa-times {
+        display: none;
+    }
+
+    .article-container {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .site-footer section {
+        display: block;
+    }
+
+    .abc-container {
+        display: block;
+        float: left;
+    }
+
+    .sign-up p {
+        display: inline-block;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #toggle-button {
+        display: flex;
+        flex: 0 0 auto;
+        font-size: 1.7em;
+        float: right;
+        padding: 2rem;
+    }
+
+    .site-header {
+        background: rgb(70, 65, 62);
+    }
+
+    .site-header nav {
+        display: none;
+        border-top: 2px solid rgb(0, 0, 0);
+    }
+
+    .site-header nav li {
+        display: block;
+    }
+
+    .site-header nav:not(:first-child) {
+        padding-top: 0.5rem;
+    }
+
+    .site-header nav a {
+        display: block;
+        padding: 0.5rem 1rem;
+    }
+
+    .site-header > nav > ul:nth-child(2) > li {
+        border: none;
+    }
+
+    #toggle-nav:checked + .site-header nav {
+        display: block;
+        flex: 1 0 100%;
+        text-align: center;
+    }
+
+    #toggle-nav:checked + .site-header #toggle-button i.fa-bars {
+        display: none;
+    }
+
+    #toggle-nav:not(:checked) + .site-header #toggle-button i.fa-times {
+        display: none;
+    }
 }

@@ -1,0 +1,157 @@
+@media screen and (max-width: 600px) {
+    html, body {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    .left-to-right:first-child {
+        background: url('./img/spot-bg-01.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .left-to-right:nth-child(3) {
+        background: url('./img/spot-bg-02.jpg') no-repeat;
+        background-size: cover;
+    }
+
+    .left-to-right:first-child {
+        height: 100%;
+    }
+
+    .left-to-right:first-child article,
+    .left-to-right:nth-child(3) article {
+        width: auto;
+        height: auto;
+        border-radius: 2rem;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+        padding: 1rem;
+        line-height: 1;
+        overflow: hidden;
+    }
+
+    .left-to-right:first-child article button,
+    .left-to-right:nth-child(3) article button,
+    main > section:nth-child(2) article button {
+        display: none;
+    }
+
+    main > section:nth-child(2) {
+        display: block;
+    }
+
+    main > section:nth-child(2) header h1 {
+        width: 27rem;
+    }
+
+    main > section:nth-child(2) > article,
+    main > section:last-child > article {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    main > section:nth-child(2) > article img {
+        width: 30rem;
+        border-radius: 50%;
+    }
+    
+    main > section:last-child {
+        display: block;
+        margin: 1.5rem auto;
+    }
+    
+    main > section:last-child > article {
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    section form label input, section form label textarea {
+        width: 65%;
+    }
+
+    main > section:last-child > article {
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    main > section:last-child > article img {
+        width: 70%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    html, body {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    main > section:last-child {
+        display: block;
+        margin: 1.5rem auto;
+    }
+
+    main > section:last-child > article {
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    main > section:last-child > article img {
+        width: 20%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    html, body {
+        font-size: 16px;
+        margin: 0;
+    }
+
+    main {
+        width: 100%;
+        margin: 0;
+    }
+
+    main > section:last-child {
+        display: block;
+        margin: 1.5rem auto;
+    }
+
+    main > section:last-child > article {
+        text-align: center;
+    }
+
+    form {
+        width: 100%;
+    }
+
+    main > section:last-child > article img {
+        width: 20%;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}

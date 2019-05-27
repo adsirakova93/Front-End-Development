@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign-Up</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="sign-up-container">
+        <section class="logo-section">
+            <section class="logo-container">
+                <h1 class="logo">SoftUni</h1>
+            </section>
+            <section class="logo-container-content">
+                <h1 class="welcome-message">Welcome to SoftUni.</h1>
+                <h2 class="question">Are you ready to become a dev?</h2>
+            </section>
+            <section class="links">
+                <ul>
+                    <li><a href="#"><i class="fas fa-globe-americas"></i></a></li>
+                    <li><a href="https://github.com/BorisLechev"><i class="fab fa-github"></i></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                </ul>
+            </section>
+            <div class="overlay"></div>
+        </section>
+        <section class="form-container">
+            <form action="POST">
+                <section class="form-group">
+                    <label for="username">USERNAME</label>
+                    <input type="text" id="username" placeholder="borislechev" required>
+                </section>
+                <section class="form-group">
+                    <label for="email">EMAIL</label>
+                    <input type="email" id="email" placeholder="borislechev@gmail.com" required>
+                </section>
+                <section class="form-group">
+                    <label for="password">PASSWORD</label>
+                    <input type="password" id="password" placeholder="********" required>
+                </section>
+                <section class="form-group">
+                    <label for="repeat-password">REPEAT PASSWORD</label>
+                    <input type="password" id="repeat-password" placeholder="********" required>
+                </section>
+                <section class="submit">
+                    <ul>
+                        <li><button>Register</button></li>
+                        <li><a href="#">I am already a ninja</a></li>
+                    </ul>
+                </section>
+            </form>
+        </section>
+    </section>
+</body>
+</html>

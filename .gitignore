@@ -61,4 +61,8 @@ typings/
 .next
 
 #WebStorm IDE
+<<<<<<< HEAD
 .idea
+=======
+.idea
+>>>>>>> 4d8a3ea825c0254397d8a80cbbaec8c78c0bee0e

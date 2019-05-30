@@ -22,7 +22,7 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: BLechev
 github_username:  BorisLechev
 
-exclude: [_assets]
+exclude: [_assets, node_modules, Gemfile, Gemfile.lock, gulpfile.js, package-lock.json, README.md]
 # Build settings
 markdown: kramdown
 plugins:

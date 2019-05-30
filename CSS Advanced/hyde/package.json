@@ -1,16 +1,19 @@
 {
-  "name": "test",
+  "name": "hyde",
   "version": "1.0.0",
-  "description": "learning to use gulp",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "BorisLechev",
   "license": "MIT",
-  "dependencies": {
+  "devDependencies": {
     "browser-sync": "^2.26.5",
+    "child_process": "^1.0.2",
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^6.1.0"
+    "gulp-autoprefixer": "^6.1.0",
+    "gulp-cli": "^2.2.0",
+    "gulp-exec": "^3.0.2"
   }
 }

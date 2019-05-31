@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i&display=swap&subset=latin-ext');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+/* Typography global style */
+
+html {
+    font-family: 'PT Sans', sans-serif;
+}
+
+section {
+    width: 62%;
+    margin: 2rem auto;
+    padding: 2rem;
+    text-align: center;
+    color: var(--color-primary, rgb(39, 84, 104));
+    border: 1px solid var(--color-alternative-yellow, rgb(255, 199, 1));
+    border-radius: 0.3rem;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+li {
+    width: 32%;
+    display: inline-block;
+}
+
+h3 {
+    padding-bottom: 0.8rem;
+}
+
+button {
+    background: var(--color-alternative-yellow, rgb(255, 199, 1));
+    border: none;
+    outline: none;
+    padding: 0.5rem 1rem;
+    color: var(--color-alternative-white, rgb(255, 255, 255));
+    font-size: 0.9em;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-radius: 0.3rem;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    background: var(--color-primary, rgb(39, 84, 104));
+    color: var(--color-alternative-yellow, rgb(255, 199, 1));
+}

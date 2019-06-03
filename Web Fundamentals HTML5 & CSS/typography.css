@@ -13,26 +13,26 @@
 /* Typography global style */
 
 html {
-    font: 12px/1.5 PT Sans, Helvetica, Verdana, sans-serif;
+    font: 12px/1.5 'PT Sans', 'Helvetica', 'Verdana', sans-serif;
 }
 
 @media (min-width: 600px) {
     html { font-size: 14px; }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1260px) {
     html { font-size: 16px; }
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1420px) {
     html { font-size: 18px; }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1660px) {
     html { font-size: 21px; }
 }
 
-body, table, form, input, select, textarea, legend, label, button {
+body, table, form, input, select, textarea, legend, button {
     font: inherit;
 }
 
@@ -65,7 +65,7 @@ ul > li > ul > li > ul > li {
 }
 
 h1,h2,h3,h4,h5,h6 {
-    font-family: PT Sans, serif;
+    font-family: 'PT Serif', serif;
     /* font-weight: normal; */
     line-height: 1.1;
     margin: 0 0 0.5em 0;

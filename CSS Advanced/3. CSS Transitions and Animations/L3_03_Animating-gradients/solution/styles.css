@@ -1,0 +1,43 @@
+body, html {
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div {
+    width: 30rem;
+    height: 30rem;
+    position: relative;
+    background: red;
+}
+
+div:before,
+div:after {
+    display: block;
+    position: absolute;
+    content: '';
+    top: 0; right: 0; bottom: 0; left: 0;
+}
+
+div:before {
+    background: linear-gradient(to top, rgb(231, 236, 237), rgb(129, 146, 158));
+    z-index: 10;
+    transition: opacity 0.5s ease-in-out;
+}
+
+div:after {
+    background: linear-gradient(to top, rgb(252, 201, 136), rgb(198, 122, 34));
+    z-index: 5;
+}
+
+div:hover:before {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}

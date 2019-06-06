@@ -1,0 +1,29 @@
+body, html {
+    font: 16px/1.5 "Verdana", sans-serif;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(232, 234, 238);
+}
+
+a {
+    padding: 1rem 2rem;
+    color: rgb(45, 45, 45);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    outline: 5px solid rgb(32, 63, 93);
+    margin-right: 1rem;
+    transition: outline 0.5s ease-in-out;
+}
+
+a:hover {
+    outline-width: 10px;
+}

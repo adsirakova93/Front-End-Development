@@ -1,0 +1,155 @@
+/*
+    Typography
+*/
+
+html {
+    font: 12px/1.5 "Georgia", serif;
+  }
+  
+  body,
+  table,
+  input,
+  select {
+    font: inherit;
+  }
+  
+  @media screen and (min-width: 600px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    html {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    html {
+      font-size: 18px;
+      line-height: 1.1;
+    }
+  }
+  
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: bold;
+    padding-bottom: 0.5em;
+  }
+  
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.8em;
+  }
+  h3 {
+    font-size: 1.6em;
+  }
+  h4 {
+    font-size: 1.4em;
+  }
+  h5 {
+    font-size: 1.2em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+  
+  /*
+      Layout
+  */
+  
+  body {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    grid-template-areas:
+      "hd"
+      "ct"
+      "sp"
+      "ss"
+      "fr";
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    /* background: rgb(238, 238, 238); */
+  }
+  
+  /* 70% of 800px = 560px 70% of 600px = 420px, 70 / 30 = 2.33fr */
+  /* 30% of 800px = 240px 30% of 600px(phone) = 180px */
+  @media screen and (min-width: 800px) {
+    body {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(180px, 1fr));
+      grid-template-rows: auto 20vh repeat(2, auto);
+      grid-template-areas:
+        "hd hd hd hd hd hd"
+        "s1 s1 s2 s2 s3 s3"
+        "xx xx xx xx xx xx"
+        "sp ct ct ct ct ss"
+        "fr fr fr fr fr fr";
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem;
+      /* background: rgb(238, 238, 238); */
+    }
+  }
+  
+  body > * {
+    padding: 1rem;
+    /* outline: 1px solid rgb(0, 0, 0); */
+  }
+  
+  body > header {
+  /*   grid-column: 1 / -1; */
+    grid-area: hd;
+  }
+  
+  body > section:nth-of-type(1) {
+    grid-area: s1;
+  }
+  
+  body > section:nth-of-type(2) {
+    grid-area: s2;
+  }
+  
+  body > section:nth-of-type(3) {
+    grid-area: s3;
+  }
+  
+  body > .banner {
+  /*   grid-column: 1 / span 3; */
+    grid-area: xx;
+  }
+  
+  body > main {
+  /*   grid-column: 1 / span 2; */
+    grid-area: ct;
+  }
+  
+  body > aside.primary {
+    grid-area: sp;
+  }
+  
+  body > aside.secondary {
+    grid-area: ss;
+  }
+  
+  body > footer {
+  /*   grid-column: 1/ -1; */
+    grid-area: fr;
+  }
+  
+  @media screen and (max-width: 800px) {
+    body > section,
+    .banner {
+      display: none;
+    }
+  }
+  

@@ -1,0 +1,86 @@
+body {
+    font-size: 18px;
+    background: rgb(255, 255, 255);
+    padding: 2rem;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(40, 1fr);
+    grid-template-rows: repeat(40, 1fr);
+    height: 100vh;
+    background: rgb(238, 238, 238);
+}
+
+/* започни от 3-та колона */
+.media {
+    grid-column: 3 / span 20;
+    grid-row: 3 / span 15;
+    overflow: hidden;
+}
+
+.media img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.article {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.3);
+    border-radius: 0.6em;
+    grid-column: 12 / span 25;
+    grid-row: 12 / span 1;
+    padding: 2rem;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    grid-gap: 1rem;
+    grid-auto-flow: dense;
+}
+
+.item {
+    background: rgb(204, 204, 204);
+    overflow: hidden;
+    position: relative;
+}
+
+.item:after {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+.item.landscape {
+    grid-column-start: span 2;
+}
+
+.item.landscape:after {
+    padding-top: 50%;
+}
+
+.item.landscape img {
+    width: 100%;
+    height: auto;
+}
+
+.item.portrait {
+    grid-row-start: span 2;
+}
+
+.item.portrait img {
+    width: auto;
+    height: 100%;
+}
+
+/* .item - relative & position - absolute = квадратчета */
+.item img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+}

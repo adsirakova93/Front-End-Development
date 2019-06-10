@@ -1,0 +1,28 @@
+body {
+	display: grid;
+	/* grid-template-columns: 7fr 3fr; */
+	grid-gap: 2rem;
+	padding: 2rem;
+}
+
+
+header,
+main,
+aside,
+footer {
+	background: rgb(0, 0, 0);
+	color: rgb(255, 255, 255);
+	padding: 2rem;
+	border-radius: 0.3rem;
+}
+
+@media screen and (min-width: 1024px) {
+	body {
+		grid-template-columns: 7fr 3fr;
+	}
+
+	header,
+	footer {
+		grid-column-start: span 2;
+	}
+}

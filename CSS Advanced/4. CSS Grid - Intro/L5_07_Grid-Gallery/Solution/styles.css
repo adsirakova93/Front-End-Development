@@ -1,0 +1,52 @@
+body {
+    padding: 2rem;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-flow: dense;
+    grid-gap: 1rem;
+    margin: 0 auto;
+    max-width: 70rem;
+    padding: 2rem 0 0;
+}
+
+div {
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+div:nth-child(even) {
+    grid-row-end: span 2;
+    grid-column-end: span 2;
+}
+
+div img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    right: 0; left: 0;
+    position: absolute;
+    object-fit: cover;
+}
+
+div img:hover,
+div img:focus {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+div:after {
+    display: block;
+    content: '';
+    padding-top: 100%;
+}
+
+@media screen and (max-width: 800px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

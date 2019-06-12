@@ -1,0 +1,19 @@
+.site-navigation {
+    margin-right: auto;
+    padding-top: 0.5rem;
+
+    ul {
+        display: flex;
+        padding-bottom: 0.5rem;
+
+        li {
+            list-style: none;
+            padding-right: 1.5rem;
+
+            a {
+                text-decoration: none;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,12 @@
+.logo-line {
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: $sizing-ws-base 0;
+
+    img {
+        width: auto;
+        height: 4rem;
+    }
+}

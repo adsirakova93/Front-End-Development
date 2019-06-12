@@ -1,0 +1,247 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Mono|PT+Sans:400,400i,700,700i|PT+Serif:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+html {
+  font: 12px/1.5 'PT Sans', sans-serif; }
+
+@media (min-width: 600px) {
+  html {
+    font-size: 14px; } }
+@media (min-width: 1260px) {
+  html {
+    font-size: 16px; } }
+@media (min-width: 1420px) {
+  html {
+    font-size: 18px; } }
+@media (min-width: 1660px) {
+  html {
+    font-size: 21px; } }
+body, table, form, input, select, textarea, legend, label, button {
+  font: inherit; }
+
+p,
+ul,
+ol {
+  padding-bottom: 1.5em; }
+
+ul,
+ol {
+  padding-left: 2em; }
+
+li ul,
+li ol {
+  padding-top: 0.5em; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'PT Serif', serif;
+  /* font-weight: normal; */
+  line-height: 1.1;
+  margin: 0 0 0.5em 0;
+  padding: 0; }
+
+h1 {
+  font-size: 3.052rem; }
+
+h2 {
+  font-size: 2.441rem; }
+
+h3 {
+  font-size: 1.953rem; }
+
+h4 {
+  font-size: 1.563rem; }
+
+h5 {
+  font-size: 1.25rem; }
+
+h6 {
+  font-size: 1rem; }
+
+.banner:after, .banner:before {
+  display: block;
+  content: '';
+  position: absolute; }
+
+.gallery-container article .image-container:before {
+  display: block;
+  content: ''; }
+
+.banner:after {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0; }
+
+.site-logo {
+  width: 8rem;
+  height: auto;
+  padding-right: 4rem;
+  padding-top: 0.5rem; }
+
+.button {
+  padding: 0.5rem 0.8rem;
+  text-decoration: none;
+  outline: none;
+  border: 2px solid transparent;
+  border-radius: 0.4rem; }
+  .button-primary {
+    color: white;
+    background: #2c70ed; }
+  .button-primary:hover, .button-primary:focus {
+    background: #568df1;
+    transition: background-color 0.25s ease-in; }
+
+.site-navigation {
+  margin-right: auto;
+  padding-top: 0.5rem; }
+  .site-navigation ul {
+    display: flex;
+    padding-bottom: 0.5rem; }
+    .site-navigation ul li {
+      list-style: none;
+      padding-right: 1.5rem; }
+      .site-navigation ul li a {
+        text-decoration: none; }
+
+.form {
+  background: black;
+  padding: 1.5em 0;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
+  .form input {
+    outline: none;
+    border: none;
+    width: 15%;
+    border-radius: 0.4rem;
+    margin-right: 0.8rem;
+    padding-left: 0.5em;
+    background: #0e1d33;
+    color: silver; }
+
+body {
+  max-width: 1400px;
+  margin: 0 auto;
+  color: #575d6b; }
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  padding: 1rem 2rem; }
+
+.site-footer {
+  background: #102039; }
+
+.banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url("../../../images/jorge-fernandez-salas-1380490-unsplash.jpg") no-repeat center center;
+  background-size: cover;
+  padding: 10rem 0;
+  text-align: center;
+  position: relative; }
+  .banner:before {
+    width: 12rem;
+    height: 12rem;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 20px solid orange;
+    border-radius: 50%; }
+  .banner h1 {
+    max-width: 30%;
+    margin: 0 auto;
+    color: white;
+    position: relative; }
+
+.logo-line {
+  display: flex;
+  justify-content: space-between;
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 1.5em 0; }
+  .logo-line img {
+    width: auto;
+    height: 4rem; }
+
+.map {
+  padding-top: 3em; }
+  .map h2 {
+    width: 40%;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 1.5em; }
+  .map img {
+    display: block;
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5); }
+
+.gallery {
+  width: 85%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 3em 0;
+  background: #efefef; }
+  .gallery > p {
+    padding: 2em; }
+  .gallery-container {
+    display: flex;
+    flex-wrap: wrap; }
+    .gallery-container article {
+      display: flex;
+      flex: 1 1 60%;
+      margin: 0.5em;
+      padding: 0.5em;
+      box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+      background: white; }
+      .gallery-container article .image-container {
+        display: block;
+        width: 40%;
+        position: relative;
+        overflow: hidden; }
+        .gallery-container article .image-container:before {
+          padding-top: 100%; }
+        .gallery-container article .image-container img {
+          width: 100%;
+          height: auto;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        .gallery-container article .image-container .portrait {
+          width: auto;
+          height: 100%; }
+        @media screen and (min-width: 1024px) {
+          .gallery-container article .image-container .portrait.woman {
+            width: 100%;
+            height: auto; } }
+      .gallery-container article .content-container {
+        width: 55%;
+        padding: 1.5em; }
+        .gallery-container article .content-container img {
+          width: 3rem; }
+        .gallery-container article .content-container p {
+          padding: 1.5em; }
+    .gallery-container .full-size {
+      flex: 1 1 30%;
+      padding: 0; }
+      .gallery-container .full-size .image-container {
+        flex-grow: 1; }
+
+.get-start-free {
+  background: #273648;
+  color: white;
+  text-align: center; }
+  .get-start-free h2 {
+    padding-top: 0.75em; }
+  .get-start-free .form {
+    background: #273648; }
+
+/*# sourceMappingURL=styles.css.map */

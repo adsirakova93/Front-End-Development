@@ -1,0 +1,18 @@
+.form {
+    background: rgb(0, 0, 0);
+    padding: $sizing-ws-base 0;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    input {
+        outline: none;
+        border: none;
+        width: 15%;
+        border-radius: $main-border-radius;
+        margin-right: 0.8rem;
+        padding-left: $sizing-ws-base / 3;
+        background: rgb(14, 29, 51);
+        color: rgb(192, 192, 192);
+    }
+}

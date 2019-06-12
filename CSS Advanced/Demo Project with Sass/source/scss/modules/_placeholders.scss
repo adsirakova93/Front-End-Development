@@ -1,0 +1,15 @@
+%pseudo-after {
+    display: block;
+    content: '';
+    position: absolute;
+}
+
+%pseudo-after-without-absolute {
+    display: block;
+    content: '';
+}
+
+%pseudo-after-box {
+    @extend %pseudo-after;
+    top: 0; right: 0; bottom: 0; left: 0;
+}

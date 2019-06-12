@@ -1,0 +1,18 @@
+.map {
+    padding-top: $sizing-ws-base * 2;
+
+    h2 {
+        width: 40%;
+        margin: 0 auto;
+        text-align: center;
+        padding-bottom: $sizing-ws-base;
+    }
+
+    img {
+        display: block;
+        width: 60%;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+    }
+}

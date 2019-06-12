@@ -1,0 +1,80 @@
+.gallery {
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    padding: $sizing-ws-base * 2 0;
+    background: rgb(239, 239, 239);
+
+    & > p {
+        padding: $sizing-ws-base / 3 + $sizing-ws-base;
+    }
+
+    &-container {
+        display: flex;
+        flex-wrap: wrap;
+
+        article {
+            display: flex;
+            flex: 1 1 60%;
+            margin: $sizing-ws-base / 3;
+            padding: $sizing-ws-base / 3;
+            box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
+            background: rgb(255, 255, 255);
+            
+            .image-container {
+                display: block;
+                width: 40%;
+                position: relative;
+                overflow: hidden;
+
+                &:before {
+                    @extend %pseudo-after-without-absolute;
+                    padding-top: 100%;
+                }
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    position: absolute;
+                    top: 50%; left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+
+                .portrait {
+                    width: auto;
+                    height: 100%;
+                }
+
+                @media screen and (min-width: 1024px) {
+                    .portrait.woman {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            .content-container {
+                width: 55%;
+                padding: $sizing-ws-base;
+
+                img {
+                    width: 3rem;
+                }
+                
+                p {
+                    padding: $sizing-ws-base;
+                    // text-align: left;
+                }
+            }
+        }
+
+        .full-size {
+            flex: 1 1 30%;
+            padding: 0;
+
+            .image-container {
+                flex-grow: 1;
+            }
+        }
+    }
+}

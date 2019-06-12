@@ -1,0 +1,18 @@
+.button {
+    padding: 0.5rem 0.8rem;
+    text-decoration: none;
+    outline: none;
+    border: 2px solid transparent;
+    border-radius: $main-border-radius;
+
+    &-primary {
+        color: $color-btn-primary-text;
+        background: $color-btn-primary-bgrd;
+    }
+
+    &-primary:hover,
+    &-primary:focus {
+        background: rgb(86, 141, 241);
+        transition: background-color 0.25s ease-in;
+    }
+}

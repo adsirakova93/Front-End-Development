@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Design</title>
+    <script src="https://kit.fontawesome.com/4316c1de76.js"></script>
+    <link rel="stylesheet" href="typography.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="fire"></section>
+    <section class="square" onmouseup="play()">
+        <section class="time-jackpot">
+            <span class="jackpot-sum shadow"><i class="fas fa-euro-sign"></i>1, 142.34</span>
+            <img class="time-jackpot-img" src="../assets/decorTimeBig.png" alt="time_big">
+        </section>
+        <div class="timer-container">
+            <span class="timer">Pays Before <i class="far fa-clock"></i>  <span class="time">00:00:00</span></span>
+        </div>
+    </section>
+    <article class="jackpot">
+        <section class="jackpot-title">
+            <img src="../assets/potMediumLabelProg.png" alt="">
+        </section>
+        <section class="money shadow">
+            <i class="fas fa-euro-sign"></i>
+            114,233.62
+        </section>
+    </article>
+    <article class="jackpot">
+        <section class="jackpot-title">
+            <img src="../assets/potMediumLabelCeiling.png" alt="">
+        </section>
+        <section class="money shadow">
+            <i class="fas fa-euro-sign"></i>
+            571.17
+        </section>
+    </article>
+</body>
+</html>
+
+<script>
+    function play() {
+        let audio = new Audio(
+            '../assets/sounds/fire.mp3'
+        );
+        audio.play();
+    }
+</script>
